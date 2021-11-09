@@ -8,7 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main class="container">
+        <section class="input-section">
+            <label for="bill-total">Bill Total</label>
+            <input type="number"name="bill-total" id="bill-total">
+
+
+            <label for="selectTip">Select Tip</label>
+            <button class="btn">5%</button>
+            <button class="btn">10%</button>
+            <button class="btn">15%</button>
+            <button class="btn">20%</button>
+            <button class="btn">25%</button>
+            <input type="number" placeholder="Custom">
+
+            <label for="numberOfPeople">Number Of People</label>
+            <input type="number" name="numberOfPeople" id="numberOfPeople">
+        </section>
+
+        <section class="output-section">
+            <span><strong>Tip Amount</strong> <br> / person</span> <span id="tipPerPerson">$0.00</span>
+            <span><strong>Total</strong> <br> / person</span> <span id="totalPerPerson">$0.00</span>
+            
+
+            <button class="btn reset">Reset</button>
+        </section>
+    </main>
     <script type="module" src="app.js"></script>
 </body>
 </html>
