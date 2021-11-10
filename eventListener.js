@@ -1,5 +1,5 @@
+import { tipPerPerson, totalPerPerson } from "./calculate.js"
 export const eListener = (arr) => {
-    import { tipPerPerson, totalPerPerson } from "./calculate.js"
 
     
     
