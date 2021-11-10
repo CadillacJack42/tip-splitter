@@ -11,9 +11,9 @@ export const eListener = (btnArr, percentArr) => {
     for (let i = 0; i < btnArr.length-2; i++) {
         const element = btnArr[i];
         element.addEventListener('click', () => {
-            let dirtyTip = tipPerPerson(billTotal.value, percentArr[i], numberOfPeople.value)
-            let dirtyTotal = totalPerPerson(billTotal.value, percentArr[i], numberOfPeople.value)
-            // console.log(dirtyTotal, dirtyTip);
+            let dirtyTip = tipPerPerson(billTotal.value, percentArr[i], numberOfPeople.value);
+            let dirtyTotal = totalPerPerson(billTotal.value, percentArr[i], numberOfPeople.value);
+            
             tipEl.textContent =  stringCleaner(dirtyTip);
             totalEl.textContent = stringCleaner(dirtyTotal);
         });
