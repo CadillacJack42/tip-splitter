@@ -36,15 +36,16 @@ body {
     display: grid;
     width: 50%;
     /* margin: 100px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
 }
 
 .input-section {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 3px;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1.5fr;
+    gap: 10px;
     margin: 0 50px;
+
 }
 
 .output-section {
@@ -52,7 +53,25 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 3px;
     margin-right: 50px;
+    background-color: #023e8a;
+    color: #CAF0F8
     
+}
+
+.btn {
+    background-color: #023e8a;
+    color: blanchedalmond;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #0077B6;
+    color: #CAF0F8;
+}
+
+.reset {
+    background-color: #0077B6;
 }
 
 #label {
@@ -63,6 +82,14 @@ body {
 #bill-total {
     grid-column: 1 /4;
     grid-row: 2;
+    margin: 5px 0;
+    text-align: right;
+    color: #0087BF;
+    font-size: 40px;
+    background-color: #D8E2DC;
+    outline: none;
+    border: none;
+    border-radius: 2px;
 }
 
 #select-tip {
@@ -104,16 +131,25 @@ body {
 .cust-input {
     /* border: none; */
     width: 100%;
+    text-align: center;
 }
 
 #num-people {
     grid-column: 1 / 4;
     grid-row: 6;
+    margin-top: 10px;
 }
 
 #numberOfPeople {
     grid-column: 1 / 4;
     grid-row: 7;
+    text-align: right;
+    color: #0087BF;
+    font-size: 40px;
+    background-color: #D8E2DC;
+    outline: none;
+    border: none;
+    border-radius: 2px;
 }
 
 
@@ -125,6 +161,9 @@ body {
 #tipPerPerson {
     grid-column: 2;
     grid-row: 1;
+    text-align: right;
+    color:#0087BF;
+    font-size: 40px;
 }
 
 #total {
@@ -135,9 +174,15 @@ body {
 #totalPerPerson {
     grid-column: 2;
     grid-row: 2;
+    text-align: right;
+    color: #0087BF;
+    font-size: 40px;
 }
 
 .reset {
     grid-column: 1 / 4;
     grid-row: 4;
+    outline: none;
+    border: none;
+    border-radius: 2px;
 }

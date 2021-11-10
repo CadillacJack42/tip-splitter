@@ -1,4 +1,6 @@
 import { tipPerPerson, totalPerPerson } from "./calculate.js"
+import { eListener } from "./eventListener.js"
+import { stringCleaner } from "./textFormatter.js"
 
 // Cache the DOM 
 const tipEl = document.getElementById('tipPerPerson')
@@ -27,53 +29,69 @@ for (let i = 0; i < tipAmountEl.length-1; i++) {
 
   }
 
-  // console.log(arr)
+  // eListener(tipAmountEl)
 
+  
+  // Event Listener for 5% 
+  tipAmountEl[0].addEventListener('click', () => {
+      
+    let dirtyTip = tipPerPerson(billTotal.value, arr[0], numberOfPeople.value)
+    let dirtyTotal = totalPerPerson(+billTotal.value, arr[0], +numberOfPeople.value)
 
-// Event Listener for 5% 
-tipAmountEl[0].addEventListener('click', () => {
-
-  // console.log(arr[0])
-  // console.log(billTotal.value)
-  // console.log(numberOfPeople.value)
-  tipEl.textContent = tipPerPerson(billTotal.value, arr[0], numberOfPeople.value) 
-  totalEl.textContent = totalPerPerson(+billTotal.value, arr[0], +numberOfPeople.value)
+    tipEl.textContent =  stringCleaner(dirtyTip)
+    totalEl.textContent = stringCleaner(dirtyTotal)
 })
 
 
 // Event Listener for 10% 
 tipAmountEl[1].addEventListener('click', () => {
-  tipEl.textContent = tipPerPerson(billTotal.value, arr[1], numberOfPeople.value) 
-  totalEl.textContent = totalPerPerson(+billTotal.value, arr[1], +numberOfPeople.value)
+    let dirtyTip = tipPerPerson(billTotal.value, arr[1], numberOfPeople.value)
+    let dirtyTotal = totalPerPerson(+billTotal.value, arr[1], +numberOfPeople.value)
+
+    tipEl.textContent =  stringCleaner(dirtyTip)
+    totalEl.textContent = stringCleaner(dirtyTotal)
 })
 
 
 // Event Listener for 15% 
 tipAmountEl[2].addEventListener('click', () => {
-  tipEl.textContent = tipPerPerson(billTotal.value, arr[2], numberOfPeople.value) 
-  totalEl.textContent = totalPerPerson(+billTotal.value, arr[2], +numberOfPeople.value)
+let dirtyTip = tipPerPerson(billTotal.value, arr[2], numberOfPeople.value)
+let dirtyTotal = totalPerPerson(+billTotal.value, arr[2], +numberOfPeople.value)
+
+tipEl.textContent =  stringCleaner(dirtyTip)
+totalEl.textContent = stringCleaner(dirtyTotal)
 })
 
 
 // Event Listener for 20% 
 tipAmountEl[3].addEventListener('click', () => {
-  tipEl.textContent = tipPerPerson(billTotal.value, arr[3], numberOfPeople.value) 
-  totalEl.textContent = totalPerPerson(+billTotal.value, arr[3], +numberOfPeople.value)
+  let dirtyTip = tipPerPerson(billTotal.value, arr[3], numberOfPeople.value)
+  let dirtyTotal = totalPerPerson(+billTotal.value, arr[3], +numberOfPeople.value)
+
+  tipEl.textContent =  stringCleaner(dirtyTip)
+  totalEl.textContent = stringCleaner(dirtyTotal)
 })
 
 
 // Event Listener for 25% 
 tipAmountEl[4].addEventListener('click', () => {
-  tipEl.textContent = tipPerPerson(billTotal.value, arr[4], numberOfPeople.value) 
-  totalEl.textContent = totalPerPerson(+billTotal.value, arr[4], +numberOfPeople.value)
+  let dirtyTip = tipPerPerson(billTotal.value, arr[4], numberOfPeople.value)
+  let dirtyTotal = totalPerPerson(+billTotal.value, arr[4], +numberOfPeople.value)
+
+  tipEl.textContent =  stringCleaner(dirtyTip)
+  totalEl.textContent = stringCleaner(dirtyTotal)
 })
 
 
 // Event Listener for custom
 tipCustom.addEventListener('change', () => {
   const change = +tipAmountEl[5].value/100
-  tipEl.textContent = tipPerPerson(billTotal.value, change, numberOfPeople.value) 
-  totalEl.textContent = totalPerPerson(+billTotal.value, change, +numberOfPeople.value)
+
+    let dirtyTip = tipPerPerson(billTotal.value, change, numberOfPeople.value)
+    let dirtyTotal = totalPerPerson(+billTotal.value, change, +numberOfPeople.value)
+
+    tipEl.textContent =  stringCleaner(dirtyTip)
+    totalEl.textContent = stringCleaner(dirtyTotal)
 })
 
 
