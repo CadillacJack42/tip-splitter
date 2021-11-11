@@ -222,8 +222,7 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-    .container {
-    
+    .container {    
         height: 70%;
         /* width: 100%; */
     
@@ -261,27 +260,33 @@ body {
 
     #numberOfPeople {
         font-size: 10px;
-        height: 60%;
+        height: 70%;
     }
 
     #tip-amount {
-        font-size: 12px;
+        font-size: 9px;
+        margin-right: 8px;
     }
 
     #total {
-        font-size: 12px;
-        margin-top: 5px;
+        font-size: 9px;
+        margin-top: 10px;
     }
 
     #tipPerPerson {
-        font-size: 30px;
+        font-size: 25px;
+        
+
     }
 
     #totalPerPerson {
-        font-size: 30px;
+        font-size: 25px;
+        margin-top: 4px;
     }
 
     .reset {
         height: 60%;
     }
 }
+
+
