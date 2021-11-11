@@ -8,6 +8,11 @@ html, body {
     /* border: 2px solid black; */
     box-sizing: border-box;
     height: 100%;
+    max-height: 960px;
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 500px;
+    min-width: 400px;
 }
 
 body {
@@ -22,7 +27,7 @@ body {
 
 .container {
     
-    height: 40%;
+    height: 60%;
     /* width: 100%; */
 
     display: flex;
@@ -41,7 +46,6 @@ body {
     width: 100%;
     /* margin: 100px; */
     /* border: 1px solid black; */
-    
 }
 
 .input-section {
@@ -63,7 +67,8 @@ body {
     padding: 9% 3.5% 4%;
     border-radius: 15px;
     margin-top: 8%;
-    
+    max-height: 800px;
+
 }
 
 .btn {
@@ -212,4 +217,71 @@ body {
 
 .reset:hover {
     background-color: #C4E4E7;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+    
+        height: 70%;
+        /* width: 100%; */
+    
+        display: flex;
+        flex-direction: row;
+        /* margin: 100px 10px; */
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        margin: 50% 5%;
+    } 
+
+    .input-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1.5fr;
+        gap: 7px;
+        margin: 0 50px;
+        margin-top: 1%;
+        height: 35%;
+        width: 25%;
+    }
+
+    .output-section { 
+        width: 45%;
+    }
+
+    .btn {
+        padding: 1px;
+    }
+
+    #bill-total {
+        font-size: 10px;
+        height: 50%;
+    }
+
+    #numberOfPeople {
+        font-size: 10px;
+        height: 60%;
+    }
+
+    #tip-amount {
+        font-size: 12px;
+    }
+
+    #total {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    #tipPerPerson {
+        font-size: 30px;
+    }
+
+    #totalPerPerson {
+        font-size: 30px;
+    }
+
+    .reset {
+        height: 60%;
+    }
 }
