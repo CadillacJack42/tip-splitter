@@ -67,3 +67,6 @@ begins with a $ is succedded by any number of numbers followed by a decimal plac
 1. Should take an input value from the user input, and use that value in place of fixed tip values
 to execute calculate.js functions
 1. Should set all non-fixed value fields to a blank string or $0.00
+
+# Stretch Goals
+- Add validation

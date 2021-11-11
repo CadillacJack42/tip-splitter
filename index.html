@@ -11,7 +11,7 @@
     <main class="container">
         <section class="input-section">
             <label for="bill-total" id="label">Bill Total</label>
-            <input type="number"name="bill-total" id="bill-total">
+            <input type="number" min="0" name="bill-total" id="bill-total">
 
 
             <label for="selectTip" id="select-tip">Select Tip</label>
@@ -20,11 +20,11 @@
             <button class="btn" id="btn-3">15%</button>
             <button class="btn" id="btn-4">20%</button>
             <button class="btn" id="btn-5">25%</button>
-            <button id="btn-custom"><input class="btn cust-input" type="number" placeholder="Custom" ></button>
+            <button id="btn-custom"><input class="btn cust-input" type="number" min="0" placeholder="Custom" ></button>
             
 
             <label for="numberOfPeople" id="num-people">Number Of People</label>
-            <input type="number" name="numberOfPeople" id="numberOfPeople">
+            <input type="number" min="0" name="numberOfPeople" id="numberOfPeople">
         </section>
 
         <section class="output-section">
