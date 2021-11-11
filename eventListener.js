@@ -8,6 +8,7 @@ const billTotal = document.getElementById('bill-total');
 const numberOfPeople = document.getElementById('numberOfPeople');
 
 export const eListener = (btnArr, percentArr) => {
+    console.log(btnArr);
     for (let i = 0; i < btnArr.length-2; i++) {
         const element = btnArr[i];
         element.addEventListener('click', () => {
