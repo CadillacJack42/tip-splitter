@@ -42,4 +42,5 @@ resetBtn.addEventListener('click', () => {
   totalEl.textContent = '$0.00'
   billTotal.value = '';
   numberOfPeople.value = '';
+  tipAmountEl[5].value = '';
 })

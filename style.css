@@ -220,7 +220,17 @@ body {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body {
+        width: 100%;
+    }
 
     .container {    
         height: 70%;
@@ -228,7 +238,8 @@ body {
     
         display: flex;
         flex-direction: row;
-        /* margin: 100px 10px; */
+        padding: 10%;
+        /* margin: 0 auto; */
         justify-content: center;
         align-items: center;
         background-color: whitesmoke;
@@ -254,13 +265,13 @@ body {
     }
 
     #bill-total {
-        font-size: 10px;
-        height: 50%;
+        font-size: 15px;
+        height: 70%;
     }
 
     #numberOfPeople {
-        font-size: 10px;
-        height: 70%;
+        font-size: 15px;
+        height: 100%;
     }
 
     #tip-amount {
@@ -286,6 +297,7 @@ body {
 
     .reset {
         height: 60%;
+        font-size: 20px;
     }
 }
 
